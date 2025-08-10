@@ -1,6 +1,6 @@
-module ex5(a,b,c,d,f);
-input a, b, c, d;
+module ex5(x1,x2,x3,x4,f);
+input x1, x2, x3, x4;
 output f;
 //continuous assignment
-assign f=(a&b&d)|(a&b&c)|(b&c&d)|(a&c&d);
+  assign f=(x1&x2&x4)|(x1&x2&x3)|(x2&x3&x4)|(x1&x3&x4);
 endmodule
