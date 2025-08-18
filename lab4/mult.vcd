@@ -1,0 +1,70 @@
+$date
+	Mon Aug 18 15:58:15 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mult $end
+$var wire 4 ! p [3:0] $end
+$var reg 2 " a [1:0] $end
+$var reg 2 # b [1:0] $end
+$scope module e $end
+$var wire 2 $ a [1:0] $end
+$var wire 2 % b [1:0] $end
+$var wire 1 & p0 $end
+$var wire 1 ' p1 $end
+$var wire 1 ( p2 $end
+$var wire 1 ) p3 $end
+$var wire 1 * s2 $end
+$var wire 1 + s1 $end
+$var wire 4 , p [3:0] $end
+$var wire 1 - c2 $end
+$var wire 1 . c1 $end
+$scope module h1 $end
+$var wire 1 . carry $end
+$var wire 1 + sum $end
+$var wire 1 ' x $end
+$var wire 1 ( y $end
+$upscope $end
+$scope module h2 $end
+$var wire 1 - carry $end
+$var wire 1 * sum $end
+$var wire 1 + x $end
+$var wire 1 ) y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0.
+0-
+b110 ,
+1+
+1*
+0)
+0(
+1'
+0&
+b1 %
+b10 $
+b1 #
+b10 "
+b110 !
+$end
+#10000
+0+
+1.
+1)
+b101 !
+b101 ,
+1&
+1(
+b11 #
+b11 %
+b11 "
+b11 $
+#20000

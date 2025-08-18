@@ -1,0 +1,76 @@
+$date
+	Mon Aug 18 16:22:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module bcd_tb $end
+$var wire 4 ! sum [3:0] $end
+$var wire 4 " cout [3:0] $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % cin $end
+$var wire 4 ( sum [3:0] $end
+$var wire 4 ) cout [3:0] $end
+$var wire 1 * correction_needed $end
+$var wire 5 + corrected_sum [4:0] $end
+$var wire 5 , binary_sum [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10010 ,
+b11000 +
+1*
+b1 )
+b1000 (
+b1001 '
+b1001 &
+0%
+b1001 $
+b1001 #
+b1 "
+b1000 !
+$end
+#10000
+b10 !
+b10 (
+b10010 +
+b101 $
+b101 '
+b1100 ,
+b111 #
+b111 &
+#20000
+b111 !
+b111 (
+b0 "
+b0 )
+b111 +
+b100 $
+b100 '
+0*
+b111 ,
+b11 #
+b11 &
+#30000
+b101 !
+b101 (
+b1 "
+b1 )
+b10101 +
+b111 $
+b111 '
+1*
+b1111 ,
+b1000 #
+b1000 &
+#40000

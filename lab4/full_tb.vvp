@@ -1,0 +1,90 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55fe68cd01d0 .scope module, "full_tb" "full_tb" 2 4;
+ .timescale -9 -9;
+v0x55fe68ce59a0_0 .var "Cin", 0 0;
+v0x55fe68ce5a90_0 .net "Cout", 0 0, L_0x55fe68ce6200;  1 drivers
+v0x55fe68ce5b50_0 .net "sum", 0 0, L_0x55fe68ce5fa0;  1 drivers
+v0x55fe68ce5c40_0 .var "x", 0 0;
+v0x55fe68ce5d30_0 .var "y", 0 0;
+S_0x55fe68cd0360 .scope module, "e1" "full" 2 7, 3 1 0, S_0x55fe68cd01d0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "Cin";
+    .port_info 1 /INPUT 1 "x";
+    .port_info 2 /INPUT 1 "y";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "Cout";
+L_0x55fe68ce6200 .functor OR 1, L_0x55fe68ce5ee0, L_0x55fe68ce60e0, C4<0>, C4<0>;
+v0x55fe68ce52f0_0 .net "Cin", 0 0, v0x55fe68ce59a0_0;  1 drivers
+v0x55fe68ce53b0_0 .net "Cout", 0 0, L_0x55fe68ce6200;  alias, 1 drivers
+v0x55fe68ce5450_0 .net "c1", 0 0, L_0x55fe68ce5ee0;  1 drivers
+v0x55fe68ce5550_0 .net "c2", 0 0, L_0x55fe68ce60e0;  1 drivers
+v0x55fe68ce5620_0 .net "s1", 0 0, L_0x55fe68ce5e70;  1 drivers
+v0x55fe68ce5760_0 .net "sum", 0 0, L_0x55fe68ce5fa0;  alias, 1 drivers
+v0x55fe68ce5800_0 .net "x", 0 0, v0x55fe68ce5c40_0;  1 drivers
+v0x55fe68ce58a0_0 .net "y", 0 0, v0x55fe68ce5d30_0;  1 drivers
+S_0x55fe68cced90 .scope module, "stage0" "half" 3 6, 3 12 0, S_0x55fe68cd0360;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "x";
+    .port_info 1 /INPUT 1 "y";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "carry";
+L_0x55fe68ce5e70 .functor XOR 1, v0x55fe68ce5c40_0, v0x55fe68ce5d30_0, C4<0>, C4<0>;
+L_0x55fe68ce5ee0 .functor AND 1, v0x55fe68ce5c40_0, v0x55fe68ce5d30_0, C4<1>, C4<1>;
+v0x55fe68ccefe0_0 .net "carry", 0 0, L_0x55fe68ce5ee0;  alias, 1 drivers
+v0x55fe68ce4a60_0 .net "sum", 0 0, L_0x55fe68ce5e70;  alias, 1 drivers
+v0x55fe68ce4b20_0 .net "x", 0 0, v0x55fe68ce5c40_0;  alias, 1 drivers
+v0x55fe68ce4bc0_0 .net "y", 0 0, v0x55fe68ce5d30_0;  alias, 1 drivers
+S_0x55fe68ce4d00 .scope module, "stage1" "half" 3 7, 3 12 0, S_0x55fe68cd0360;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "x";
+    .port_info 1 /INPUT 1 "y";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "carry";
+L_0x55fe68ce5fa0 .functor XOR 1, v0x55fe68ce59a0_0, L_0x55fe68ce5e70, C4<0>, C4<0>;
+L_0x55fe68ce60e0 .functor AND 1, v0x55fe68ce59a0_0, L_0x55fe68ce5e70, C4<1>, C4<1>;
+v0x55fe68ce4f70_0 .net "carry", 0 0, L_0x55fe68ce60e0;  alias, 1 drivers
+v0x55fe68ce5030_0 .net "sum", 0 0, L_0x55fe68ce5fa0;  alias, 1 drivers
+v0x55fe68ce50f0_0 .net "x", 0 0, v0x55fe68ce59a0_0;  alias, 1 drivers
+v0x55fe68ce5190_0 .net "y", 0 0, L_0x55fe68ce5e70;  alias, 1 drivers
+    .scope S_0x55fe68cd01d0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "full_tb.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55fe68cd01d0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fe68ce59a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce5c40_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fe68ce5d30_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fe68ce59a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce5c40_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce5d30_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce59a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce5c40_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fe68ce5d30_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 18 "$display", "Success" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "full_tb.v";
+    "./full.v";
