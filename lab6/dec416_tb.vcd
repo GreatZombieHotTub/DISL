@@ -1,0 +1,86 @@
+$date
+	Mon Sep 22 15:40:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dec416_tb $end
+$var wire 16 ! y [15:0] $end
+$var reg 1 " e $end
+$var reg 4 # w [3:0] $end
+$scope module e1 $end
+$var wire 1 " e $end
+$var wire 1 $ e1 $end
+$var wire 1 % e2 $end
+$var wire 1 & e3 $end
+$var wire 1 ' e4 $end
+$var wire 4 ( w [3:0] $end
+$var wire 16 ) y [15:0] $end
+$scope module s0 $end
+$var wire 1 $ e $end
+$var wire 2 * w [1:0] $end
+$var reg 4 + y [3:0] $end
+$upscope $end
+$scope module s1 $end
+$var wire 1 % e $end
+$var wire 2 , w [1:0] $end
+$var reg 4 - y [3:0] $end
+$upscope $end
+$scope module s2 $end
+$var wire 1 & e $end
+$var wire 2 . w [1:0] $end
+$var reg 4 / y [3:0] $end
+$upscope $end
+$scope module s3 $end
+$var wire 1 ' e $end
+$var wire 2 0 w [1:0] $end
+$var reg 4 1 y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b1 +
+b0 *
+b1 )
+b0 (
+0'
+0&
+0%
+1$
+b0 #
+1"
+b1 !
+$end
+#10
+0$
+b1000 /
+1&
+b100000000000 !
+b100000000000 )
+b0 +
+b11 *
+b11 ,
+b11 .
+b11 0
+b1011 #
+b1011 (
+#20
+b0 !
+b0 )
+b0 /
+0&
+0"
+b111 #
+b111 (
+#30

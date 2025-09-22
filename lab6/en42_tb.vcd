@@ -1,0 +1,40 @@
+$date
+	Mon Sep 22 15:57:22 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module en42_tb $end
+$var wire 2 ! y [1:0] $end
+$var wire 1 " j $end
+$var reg 4 # w [3:0] $end
+$scope module e1 $end
+$var wire 4 $ w [3:0] $end
+$var reg 1 " j $end
+$var reg 2 % y [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+b0 $
+b0 #
+0"
+bx !
+$end
+#10
+b11 !
+b11 %
+1"
+b1011 #
+b1011 $
+#20
+b10 !
+b10 %
+b111 #
+b111 $
+#30
