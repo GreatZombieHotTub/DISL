@@ -1,0 +1,40 @@
+$date
+	Mon Sep 29 15:24:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tff_tb $end
+$var wire 1 ! Q $end
+$var reg 1 " T $end
+$var reg 1 # clk $end
+$var reg 1 $ reset $end
+$scope module e1 $end
+$var wire 1 " T $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+0#
+1"
+1!
+$end
+#10
+1#
+#20
+0!
+0#
+#30
+0$
+0"
+1#
+#40
+0#
