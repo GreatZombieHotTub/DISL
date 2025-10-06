@@ -1,0 +1,142 @@
+$date
+	Mon Oct  6 14:40:49 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module sreg6_tb $end
+$var wire 6 ! q [5:0] $end
+$var reg 1 " clk $end
+$var reg 1 # w $end
+$scope module a1 $end
+$var wire 1 " clk $end
+$var wire 1 # w $end
+$var wire 6 $ q [5:0] $end
+$scope module s1 $end
+$var wire 1 " Clock $end
+$var wire 1 # D $end
+$var reg 1 % Q $end
+$upscope $end
+$scope module s2 $end
+$var wire 1 " Clock $end
+$var wire 1 & D $end
+$var reg 1 ' Q $end
+$upscope $end
+$scope module s3 $end
+$var wire 1 " Clock $end
+$var wire 1 ( D $end
+$var reg 1 ) Q $end
+$upscope $end
+$scope module s4 $end
+$var wire 1 " Clock $end
+$var wire 1 * D $end
+$var reg 1 + Q $end
+$upscope $end
+$scope module s5 $end
+$var wire 1 " Clock $end
+$var wire 1 , D $end
+$var reg 1 - Q $end
+$upscope $end
+$scope module s6 $end
+$var wire 1 " Clock $end
+$var wire 1 . D $end
+$var reg 1 / Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+b0 $
+1#
+0"
+b0 !
+$end
+#20
+1&
+b100000 !
+b100000 $
+1%
+1"
+#40
+0"
+0#
+#60
+1(
+0&
+1'
+b10000 !
+b10000 $
+0%
+1"
+#80
+0"
+1#
+#100
+1&
+0(
+1*
+1%
+0'
+b101000 !
+b101000 $
+1)
+1"
+#120
+0"
+0#
+#140
+1,
+0*
+1(
+0&
+1+
+0)
+1'
+b10100 !
+b10100 $
+0%
+1"
+#160
+0"
+#180
+0(
+1*
+0,
+1.
+0'
+1)
+0+
+b1010 !
+b1010 $
+1-
+1"
+#200
+0"
+#220
+0.
+1,
+0*
+1/
+0-
+1+
+b101 !
+b101 $
+0)
+1"
+#240
+0"
